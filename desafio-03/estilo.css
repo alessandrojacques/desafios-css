@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+    background-color: #CCC;
+    display: flex;
+}
+
+h1{
+   
+    
+}
+
+span::before{
+    content: '';
+    animation: like 3s infinite;
+}
+
+@keyframes like{
+    0%{
+      
+        content: '💻'
+    }
+    
+    50%{
+        
+        content: '🎮'
+    }
+    
+    100%{ 
+        content: '🍕'
+    }
+}

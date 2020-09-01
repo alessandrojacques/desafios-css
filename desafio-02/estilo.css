@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {   
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: #CCC;
+}
+
+h3 {
+    padding: 25px;
+    margin: auto;
+    color: white;
+    position: relative;
+    animation-name: alternando; /*nome da animação */
+    animation-duration: 6s;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; /* altera a direção da rotação */
+}
+
+@keyframes alternando {
+    0% {
+        background-color: aqua;
+        left: 0px; 
+        top: 0px;
+    }
+    
+    25%{
+        background-color: black;
+        left: 250px; 
+        top: 0px;
+    }
+    
+    50%{
+        background-color: black;
+        left:250px; 
+        top: 250px;
+    }
+    
+    75%{
+        background-color: blueviolet;
+        left: 0px; 
+        top: 250px;
+    }
+    
+    100%{
+        background-color: darkgreen;
+        left: 0px; 
+        top: 0px;
+    }
+}
